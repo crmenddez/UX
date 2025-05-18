@@ -144,35 +144,12 @@
             </li>
             </li>
   
-            <li class="menu-header small text-uppercase"><span class="menu-header-text">Customer</span></li>
-            <!-- Cards -->
-            <li class="menu-item">
-              <a href="layouts-blank.html" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-collection"></i>
-                <div data-i18n="Basic">Catalog</div>
-              </a>
-            </li>
+
   
   
-            <!-- Forms & Tables -->
-            <li class="menu-header small text-uppercase"><span class="menu-header-text">Attention</span></li>
-            <!-- Forms -->
-            <li class="menu-item">
-              <a href="layouts-blank.html" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-collection"></i>
-                <div data-i18n="Basic">Orders</div>
-              </a>
-            </li>
+
   
-            <!-- Forms & Tables -->
-            <li class="menu-header small text-uppercase"><span class="menu-header-text">Delivery</span></li>
-            <!-- Forms -->
-            <li class="menu-item">
-              <a href="layouts-blank.html" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-collection"></i>
-                <div data-i18n="Basic">Orders</div>
-              </a>
-            </li>
+
   
           </ul>
         </aside>
@@ -204,6 +181,7 @@
                      </a>
                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                        <li><a class="dropdown-item" href="javascript:void(0)">pending </a></li>
+                       <li><a class="dropdown-item" href="javascript:void(0)">approved </a></li>
                        <li><a class="dropdown-item" href="javascript:void(0)">processed</a></li>
                        <li><a class="dropdown-item" href="javascript:void(0)">completed</a></li>
                        <li>
@@ -251,24 +229,7 @@
                       </a>
                     </li>
                     <li>
-                      <div class="dropdown-divider"></div>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        <i class="bx bx-user me-2"></i>
-                        <span class="align-middle">My Profile</span>
-                      </a>
-                    </li>
 
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        <span class="d-flex align-items-center align-middle">
-                          <i class="flex-shrink-0 bx bx-credit-card me-2"></i>
-                          <span class="flex-grow-1 align-middle">Billing</span>
-                          <span class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
-                        </span>
-                      </a>
-                    </li>
                     <li>
                       <div class="dropdown-divider"></div>
                     </li>
@@ -292,7 +253,7 @@
             <!-- Content -->
   
             <div class="container-xxl flex-grow-1 container-p-y">
-              <!-- <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"></span> Orders</h4> -->
+
   
   
   
@@ -321,6 +282,9 @@
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                           <li><a class="dropdown-item " data-bs-toggle="modal" data-bs-target="#modalCenterChange"
                               href="javascript:void(0)">pending </a></li>
+                          <li><a class="dropdown-item " data-bs-toggle="modal" data-bs-target="#modalCenterChange"
+                              href="javascript:void(0)">approved </a></li>
+                      
                           <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalCenterChange"
                               href="javascript:void(0)">processed</a></li>
                           <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalCenterChange"
@@ -626,58 +590,7 @@
                           <div class="d-grid gap-2 col-lg-6 mx-auto">
                             <button class="btn btn-primary btn-lg" type="button" data-bs-toggle="modal"
                               data-bs-target="#modalCenterDetail">Detail</button>
-                            <!-- Modal -->
-                            <div class="modal fade" id="modalCenterDetail" tabindex="-1" aria-hidden="true">
-                              <div class="modal-dialog modal-dialog-centered" role="document">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <!-- <h5 class="modal-title" id="modalCenterTitle">Redmi 14 Pro</h5> -->
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                      aria-label="Close"></button>
-                                  </div>
-                                  <div class="modal-body">
-  
-                                    <!-- Striped Rows -->
-                                    <div class="card">
-                                      <!-- <h5 class="card-header">Striped rows</h5> -->
-                                      <div class="table-responsive text-nowrap">
-                                        <table class="table table-striped">
-                                          <thead>
-                                            <tr>
-                                              <th>equipment</th>
-                                              <th>price</th>
-                                              <th>items</th>
-                                              <th>sub total</th>
-  
-                                            </tr>
-                                          </thead>
-                                          <tbody class="table-border-bottom-0">
-                                            <tr>
-                                              <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>Redmi 14
-                                                  Pro</strong></td>
-                                              <td>S/ 1780</td>
-                                              <td>1</td>
-                                              <td><span class="badge bg-label-primary me-1">S/ 1780</span></td>
-  
-                                            </tr>
-  
-                                          </tbody>
-                                        </table>
-                                      </div>
-                                    </div>
-                                    <!--/ Striped Rows -->
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
-                                      Close
-                                    </button>
-                                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-                                  </div>
-                                </div>
-                              </div>
-  
-  
-                            </div>
+
                           </div>
                         </div>
   
@@ -735,8 +648,8 @@
                         </div>
                         <div class="row mb-3">
                           <div class="d-grid gap-2 col-lg-6 mx-auto">
-                            <!-- <button class="btn btn-primary btn-lg" type="button">Detail</button> -->
-                              <button class="btn btn-primary btn-lg" type="button" data-bs-toggle="modal"
+                              <button class="btn btn-primary btn-lg" type="button" 
+                              data-bs-toggle="modal"
                               data-bs-target="#modalCenterDetail">Detail</button>
                           </div>
                         </div>
@@ -801,7 +714,6 @@
                         </div>
                         <div class="row mb-3">
                           <div class="d-grid gap-2 col-lg-6 mx-auto">
-                            <!-- <button class="btn btn-primary btn-lg" type="button">Detail</button> -->
                               <button class="btn btn-primary btn-lg" type="button" data-bs-toggle="modal"
                               data-bs-target="#modalCenterDetail">Detail</button>
                           </div>
@@ -861,7 +773,6 @@
                         </div>
                         <div class="row mb-3">
                           <div class="d-grid gap-2 col-lg-6 mx-auto">
-                            <!-- <button class="btn btn-primary btn-lg" type="button">Detail</button> -->
                               <button class="btn btn-primary btn-lg" type="button" data-bs-toggle="modal"
                               data-bs-target="#modalCenterDetail">Detail</button>
                           </div>
@@ -874,6 +785,57 @@
   
   
   
+              </div>
+              <!-- Modal -->
+              <div class="modal fade" id="modalCenterDetail" tabindex="-1" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <!-- <h5 class="modal-title" id="modalCenterTitle">Redmi 14 Pro</h5> -->
+                                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                          
+                                                  <!-- Striped Rows -->
+                                                  <div class="card">
+                                                    <!-- <h5 class="card-header">Striped rows</h5> -->
+                                                    <div class="table-responsive text-nowrap">
+                                                      <table class="table table-striped">
+                                                        <thead>
+                                                          <tr>
+                                                            <th>equipment</th>
+                                                            <th>price</th>
+                                                            <th>items</th>
+                                                            <th>sub total</th>
+                                          
+                                                          </tr>
+                                                        </thead>
+                                                        <tbody class="table-border-bottom-0">
+                                                          <tr>
+                                                            <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>Redmi 14
+                                                                Pro</strong></td>
+                                                            <td>S/ 1780</td>
+                                                            <td>1</td>
+                                                            <td><span class="badge bg-label-primary me-1">S/ 1780</span></td>
+                                          
+                                                          </tr>
+                                          
+                                                        </tbody>
+                                                      </table>
+                                                    </div>
+                                                  </div>
+                                                  <!--/ Striped Rows -->
+                                                </div>
+                                                <div class="modal-footer">
+                                                  <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                                                    Close
+                                                  </button>
+                                                  <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                                </div>
+                                              </div>
+                                            </div>
+                                          
+                                          
               </div>
             </div>
           </div>
@@ -912,7 +874,6 @@
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
     <script src="../assets/vendor/libs/jquery/jquery.js"></script>
-    <script src="../assets/vendor/libs/popper/popper.js"></script>
     <script src="../assets/vendor/js/bootstrap.js"></script>
     <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
   
