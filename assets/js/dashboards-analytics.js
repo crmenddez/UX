@@ -427,7 +427,7 @@
         width: 130,
         type: 'donut'
       },
-      labels: ['Phone', 'Sports', 'Decor', 'Fashion'],
+      labels: ['Phone Android', 'Laptop', 'Tablet', 'Phone IOS'],
       series: [85, 15, 50, 50],
       colors: [config.colors.primary, config.colors.secondary, config.colors.info, config.colors.success],
       stroke: {
