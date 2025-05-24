@@ -282,6 +282,11 @@
                    
                    
                    </div>
+                  <div class="form-check">
+                    <label class="form-check-label" for="product-all"> All </label>
+                    <input class="form-check-input check-product" type="checkbox" value="" id="product-all" checked />
+                  
+                  </div>
 
                     <!-- Modal -->
                     <div class="modal fade" id="modalCenterConfirm" tabindex="-1" aria-hidden="true">
@@ -351,7 +356,7 @@
                                   <!-- <small class="text-muted float-end">Pending </small> -->
                                   <div class="form-check">
                                     <label class="form-check-label" for="defaultCheck3"> Active </label>
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" checked />
+                                    <input class="form-check-input check-product" type="checkbox" value="" id="defaultCheck3" checked />
                           
                                   </div>
                                 </div>
@@ -420,7 +425,7 @@
                
                       <div class="form-check">
                         <label class="form-check-label" for="defaultCheck3"> Active </label>
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" checked />
+                        <input class="form-check-input check-product" type="checkbox" value="" id="defaultCheck3" checked />
   
                       </div>
                     </div>
@@ -462,7 +467,7 @@
                     
                       <div class="form-check">
                         <label class="form-check-label" for="defaultCheck3"> Active </label>
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" checked />
+                        <input class="form-check-input check-product" type="checkbox" value="" id="defaultCheck3" checked />
   
                       </div>
                     </div>
@@ -505,7 +510,7 @@
                     
                       <div class="form-check">
                         <label class="form-check-label" for="defaultCheck3"> Active </label>
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" checked />
+                        <input class="form-check-input check-product" type="checkbox" value="" id="defaultCheck3" checked />
   
                       </div>
                     </div>
@@ -549,7 +554,7 @@
                       
                       <div class="form-check">
                         <label class="form-check-label" for="defaultCheck3"> Active </label>
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" checked />
+                        <input class="form-check-input check-product" type="checkbox" value="" id="defaultCheck3" checked />
   
                       </div>
                     </div>
@@ -595,7 +600,7 @@
                      
                       <div class="form-check">
                         <label class="form-check-label" for="defaultCheck3"> Active </label>
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" checked />
+                        <input class="form-check-input check-product" type="checkbox" value="" id="defaultCheck3" checked />
   
                       </div>
                     </div>
@@ -637,7 +642,7 @@
                       
                       <div class="form-check">
                         <label class="form-check-label" for="defaultCheck3"> Active </label>
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" checked />
+                        <input class="form-check-input check-product" type="checkbox" value="" id="defaultCheck3" checked />
   
                       </div>
                     </div>
@@ -680,7 +685,7 @@
                       
                       <div class="form-check">
                         <label class="form-check-label" for="defaultCheck3"> Active </label>
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" checked />
+                        <input class="form-check-input check-product" type="checkbox" value="" id="defaultCheck3" checked />
   
                       </div>
                     </div>
@@ -724,7 +729,7 @@
                       
                       <div class="form-check">
                         <label class="form-check-label" for="defaultCheck3"> Active </label>
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" checked />
+                        <input class="form-check-input check-product" type="checkbox" value="" id="defaultCheck3" checked />
   
                       </div>
                     </div>
@@ -860,6 +865,17 @@
   
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script>
+    var check_= $('#product-all')
+    var checkP_=$('.check-product')
+      check_.on('change', function() {
+    if ($(this).prop('checked')) {
+         checkP_.prop('checked',true)
+    } else {
+         checkP_.prop('checked',false)
+    }
+});
+    </script>
   </body>
   
   </html>

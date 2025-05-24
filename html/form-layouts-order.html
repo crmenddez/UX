@@ -303,7 +303,11 @@
 
                   </div>
 
-
+                  <div class="form-check">
+                    <label class="form-check-label" for="order-all"> All </label>
+                    <input class="form-check-input check-order" type="checkbox" value="" id="order-all" checked />
+                  
+                  </div>
 
                     <!-- Modal -->
                     <div class="modal fade" id="modalCenterSeller" tabindex="-1" aria-hidden="true" style="display: none">
@@ -399,7 +403,13 @@
                                       <th>Customer</th>
                                       <th>Email</th>
                                       <th>Total</th>
-                                      <th></th>
+                                      <th>
+                                      <div class="form-check">
+                                       <input class="form-check-input " type="checkbox" id="check_tabla" checked />
+                      
+
+                                      </div>
+                                      </th>
                                     </tr>
                                   </thead>
                                   <tbody class="table-border-bottom-0">
@@ -412,7 +422,7 @@
                                       <td>
                                         <div class="form-check">
                     
-                                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" checked />
+                                          <input class="form-check-input check-table" type="checkbox" value="" id="defaultCheck3" checked />
                     
                                         </div>
                                       </td>
@@ -426,7 +436,7 @@
                                       <td>
                                         <div class="form-checkww">
                     
-                                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" checked />
+                                          <input class="form-check-input check-table" type="checkbox" value="" id="defaultCheck3" checked />
                     
                                         </div>
                                       </td>
@@ -440,7 +450,7 @@
                                       <td>
                                         <div class="form-check">
                     
-                                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" checked />
+                                          <input class="form-check-input check-table" type="checkbox" value="" id="defaultCheck3" checked />
                     
                                         </div>
                                       </td>
@@ -454,7 +464,7 @@
                                       <td>
                                         <div class="form-check">
                     
-                                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" checked />
+                                          <input class="form-check-input check-table" type="checkbox" value="" id="defaultCheck3" checked />
                     
                                         </div>
                                       </td>
@@ -544,7 +554,7 @@
                  
                       <div class="form-check">
                         <label class="form-check-label" for="defaultCheck3"> Pending </label>
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" checked />
+                        <input class="form-check-input check-order" type="checkbox" value="" id="defaultCheck3" checked />
   
                       </div>
                     </div>
@@ -604,7 +614,7 @@
                     
                       <div class="form-check">
                         <label class="form-check-label" for="defaultCheck3"> Pending </label>
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" checked />
+                        <input class="form-check-input check-order" type="checkbox" value="" id="defaultCheck3" checked />
   
                       </div>
                     </div>
@@ -670,7 +680,7 @@
                     
                       <div class="form-check">
                         <label class="form-check-label" for="defaultCheck3"> Pending </label>
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" checked />
+                        <input class="form-check-input check-order" type="checkbox" value="" id="defaultCheck3" checked />
   
                       </div>
                     </div>
@@ -729,7 +739,7 @@
                      
                       <div class="form-check">
                         <label class="form-check-label" for="defaultCheck3"> Pending </label>
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" checked />
+                        <input class="form-check-input check-order" type="checkbox" value="" id="defaultCheck3" checked />
   
                       </div>
                     </div>
@@ -887,6 +897,29 @@
   
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+   <script>
+     var checkOC_ = $('#order-all')
+     var checkOcs_ = $('.check-order')
+
+    var checktabla_ = $('#check_tabla')
+     var checktable_ = $('.check-table')
+
+     checkOC_.on('change', function () {
+       if ($(this).prop('checked')) {
+         checkOcs_.prop('checked', true)
+       } else {
+         checkOcs_.prop('checked', false)
+       }
+     });
+
+     checktabla_.on('change', function () {
+       if ($(this).prop('checked')) {
+         checktable_.prop('checked', true)
+       } else {
+         checktable_.prop('checked', false)
+       }
+     });
+   </script>
   </body>
   
   </html>
